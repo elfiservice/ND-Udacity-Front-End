@@ -1,0 +1,50 @@
+body{
+  font-family: Arial, sans-serif;
+}
+
+.card{
+  border: 1px solid #ccc;
+  width: 300px;
+  padding: 5px 10px;
+  box-shadow: 6px 6px 6px #ccc;
+  background-color: #73b796;
+}
+
+.card > h2 {
+  color : white;
+}
+
+.card .main-image {
+  width: 300px;
+}
+
+.card-details {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 0.9rem;
+  background-color: white;
+  color: #2d672d;
+
+}
+
+.card-details p > em{
+  font-size: 1rem;
+}
+
+.card-details .fonts{
+  font-size: 0.8rem;
+}
+
+.card-details .fonts a{
+  cursor: pointer;
+  color: green;
+}
+
+.list-itens{
+  list-style: none;
+  margin-left: -40px;
+}
+
+.list-itens li span {
+  font-weight: bolder;
+}
