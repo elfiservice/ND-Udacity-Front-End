@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    /*outline: 1px solid red !important;*/
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.title {
+    padding: 20px 0px 5px 15px;
+    background-color: #58e4c4;
+    color: #fff;
+}
+
+.app {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.screenshot {
+    max-width: 460px;
+}
+
+.description {
+    max-width: 705px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #8c8c8c;
+}
