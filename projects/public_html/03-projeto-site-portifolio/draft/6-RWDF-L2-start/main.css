@@ -68,10 +68,17 @@ ul {
 
 .header__title {
     font-weight: 300;
-    font-size: 4em;
-    margin: 0.5em 0.25em;
+    font-size: 1.5em;
+    margin-top: 1.8em;
     display: inline-block;
     color: #212121;
+}
+
+.header .fa-bars {
+    font-size: 2.5em;
+    float: right;
+    padding-top: 26px;
+    padding-right: 5px;
 }
 
 
@@ -83,9 +90,10 @@ ul {
 
 .nav {
     /*width: 800px;*/
-    width: 100%;
+    /*width: 100%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
+    /*display: none;*/
 }
 
 .nav__list {
@@ -96,7 +104,7 @@ ul {
 
 .nav__item {
     box-sizing: border-box;
-    display: inline-block;
+    /*display: inline-block;*/
     width: 24%;
     text-align: center;
     line-height: 24px;
@@ -137,6 +145,15 @@ main {
  *
  */
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100%;
+}
+
 
 /*
  *
@@ -145,7 +162,7 @@ main {
  */
 
 .hero {
-    float: left;
+    /*float: left;*/
     /*width: 480px;*/
     width: 100%;
     position: relative;
@@ -174,7 +191,7 @@ main {
  */
 
 .top-news {
-    float: right;
+    /*float: right;*/
     /*width: 320px;*/
     width: 100%;
     height: 300px;
@@ -223,7 +240,7 @@ main {
 .scores {
     /*width: 480px;*/
     width: 100%;
-    float: left;
+    /*float: left;*/
     padding-top: 1em;
 }
 
@@ -270,7 +287,7 @@ main {
  */
 
 .weather {
-    float: right;
+    /*float: right;*/
     /*width: 320px;*/
     width: 100%;
     padding: 1em;
@@ -307,7 +324,7 @@ main {
 
 .weather__next__item {
     display: inline-block;
-    width: 20%;
+    width: 18%;
     text-align: center;
 }
 
@@ -367,6 +384,7 @@ footer {
     border-top: 1px solid #E0E0E0;
     padding: 1em;
     width: 100%;
+    text-align: center;
 }
 
 footer li {
@@ -378,4 +396,78 @@ footer a {
     text-decoration: none;
     color: #333;
     padding: 1.5em 0;
+}
+
+@media screen and (max-width: 649px) {
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .nav {
+        /*width: 800px;*/
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .nav__item {
+        display: inline-block;
+    }
+    .header__title {
+        font-size: 2.5em;
+        margin-top: 0.8em;
+    }
+    .header .fa-bars {
+        display: none;
+    }
+    .weather__next__image {
+        width: 70%;
+    }
+    .hero, .top-news {
+        width: 50%;
+    }
+    .scores, .weather {
+        width: 50%;
+    }
+    .snippet {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        width: 850px;
+    }
+    .content {
+        width: 850px;
+        margin: 0 auto;
+    }
+    .snippet {
+        width: 24%;
+    }
+    .header__inner, .nav {
+        width: 850px;
+    }
+    .hero {
+        width: 70%;
+    }
+    .top-news {
+        width: 30%;
+    }
 }
