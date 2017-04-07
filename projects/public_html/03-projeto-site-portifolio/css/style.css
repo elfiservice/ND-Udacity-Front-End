@@ -1,0 +1,71 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    color: #727475;
+}
+
+.text-logo {
+    font-size: 60px;
+}
+
+.text-muted {
+    color: #c0c2c3;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+header .logo-site {
+    padding-top: 12px;
+}
+
+.jobs {
+    margin-top: 20px;
+}
+
+.jobs h2 {
+    font-size: 40px;
+}
+
+.jobs .articles img {
+    cursor: pointer;
+}
+
+.jobs .articles h3 {
+    font-size: 35px;
+}
+
+.jobs .articles a {
+    cursor: pointer;
+    color: orange;
+}
+
+header.header-site {
+    background-color: #0059b2;
+    color: #fff;
+}
+
+section .image-top img {}
+
+.footer-site .content {
+    padding: 0 0 20px 0;
+}
+
+@media screen and (max-width: 991px) {
+    header.header-site, .text-content-header {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    header .text-logo {
+        font-size: 3em;
+    }
+    header .logo-site img {
+        width: 60px;
+    }
+    .jobs h2 {
+        font-size: 2em;
+    }
+}
