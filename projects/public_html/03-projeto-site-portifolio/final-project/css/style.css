@@ -1,0 +1,119 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    color: #727475;
+}
+
+.text-muted {
+    color: #c0c2c3;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+
+/*HEADER*/
+
+.text-logo {
+    font-size: 60px;
+}
+
+.header-site .logo-site {
+    padding-top: 20px;
+}
+
+.header-site {
+    background-color: #0059b2;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+
+/*CONTENT*/
+
+.jobs {
+    margin-top: 20px;
+}
+
+.jobs h2 {
+    font-size: 40px;
+}
+
+.jobs .articles img {
+    cursor: pointer;
+}
+
+.jobs .articles h3 {
+    font-size: 35px;
+}
+
+.jobs .articles a {
+    cursor: pointer;
+    color: orange;
+}
+
+
+/*FOOTER*/
+
+.footer-site .content {
+    padding: 0 0 20px 0;
+}
+
+.footer-site .social a {
+    padding: 5px 10px 9px 11px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #0059b2;
+    color: #fff;
+    margin: 10px;
+}
+
+.footer-site .social a span {
+    display: none;
+}
+
+.footer-site .copyright {
+    text-align: center;
+    color: #c0c2c3;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.footer-site .copyright span {}
+
+.modal .modal-body p {
+    padding: 20px 0;
+}
+
+@media screen and (min-width: 992px) {
+    .image-top {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header-site, .text-content-header {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .header-site .text-logo {
+        font-size: 3em;
+    }
+    .header-site .logo-site img {
+        width: 60px;
+    }
+    .jobs h2 {
+        font-size: 2em;
+    }
+}
